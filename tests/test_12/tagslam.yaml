@@ -49,7 +49,7 @@ bodies:
  - rig:
      ignore_tags: [381]
      is_static: false
-     type: camera_rig
+     type: simple
      odom_topic: "/fla/vio/odom"
      odom_frame_id: odom
      odom_acceleration: 1.0

@@ -4,7 +4,7 @@ body_defaults:
 bodies:
  - rig:
      is_static: false
-     type: camera_rig
+     type: simple
  - board_6:
      is_static: true
      default_tag_size: 0.12

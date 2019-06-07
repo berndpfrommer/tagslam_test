@@ -1592,7 +1592,7 @@ bodies:
              y: 1.0e-05
              z: 1.0e-05
  - rig:
-     type: camera_rig
+     type: simple
      is_static: false
      odom_frame_id: odom
      odom_topic: "/fla/vio/odom"

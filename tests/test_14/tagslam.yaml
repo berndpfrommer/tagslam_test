@@ -46,7 +46,7 @@ bodies:
              z: 0.1
  - rig:
      is_static: false
-     type: camera_rig
+     type: simple
      fake_odom_translation_noise: 1.0
      fake_odom_rotation_noise: 1.0
 
