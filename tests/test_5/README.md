@@ -8,7 +8,7 @@
 - detector: MIT
 - frames: 2751
 - Remark: runs a good while before the first optimization is possible.
-  D does extrinsic calibration on the fly. Short focal length, lots
+  Does extrinsic calibration on the fly. Short focal length, lots
   of distortion.  A challenging dataset. Runs a long time (20min+), 36000 factors!
 
 
