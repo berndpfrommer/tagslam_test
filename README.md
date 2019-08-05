@@ -17,5 +17,7 @@ Once you have TagSLAM working, unzip all the reference bags in the
 
     rosrun tagslam_test run_tests.bash
 
+You can also run an individual test like this:
 
+    rosrun tagslam_test run_single_test.bash 18
 
