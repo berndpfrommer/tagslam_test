@@ -1,0 +1,85 @@
+body_defaults:
+  position_noise: 0.05
+  rotation_noise: 0.01
+default_body: pennstock
+bodies:
+ - pennstock:
+     is_static: true
+     default_tag_size: 0.16
+     pose:
+       position:
+         x: 0
+         y: 0
+         z: 0
+       rotation:
+         x: 0
+         y: 0
+         z: 0
+       position_noise:
+         x: 0.0001
+         y: 0.0001
+         z: 0.0001
+       rotation_noise:
+         x: 1.0e-05
+         y: 1.0e-05
+         z: 1.0e-05
+     type: simple
+     tags:
+       - id: 45
+         size: 0.16
+         pose:
+           position:
+             x: 0.0
+             y: 0.0
+             z: 0.0
+           rotation:
+             x: 0.03706887
+             y: 0.81667657
+             z: -0.00279664
+           position_noise:
+             x: 0.001
+             y: 0.001
+             z: 0.001
+# NOTE: reduce this noise to 0.1 to make it complete	     
+           rotation_noise:
+             x: 1.0
+             y: 1.0
+             z: 1.0
+ - rig:
+     is_static: false
+     type: simple
+     fake_odom_translation_noise: 1.0
+     fake_odom_rotation_noise: 1.0
+
+plane_measurements:
+  - plane_1:
+      tags: [32, 81, 40, 24, 20, 8, 49, 95, 96, 90, 99, 47, 46, 45, 44, 86, 91, 92, 100, 83, 87, 57, 36, 55, 39, 98, 64, 97, 70, 65, 66, 67]
+      distance: 0.0
+      noise: 0.01
+      direction: [0.0, 0.0, 1.0]
+
+#
+# remove some outliers, for testing
+#
+
+squash:
+  - time: "1533224423.510462496"
+    tags: [26]
+  - time: "1533224377.505000200"
+    tags: [11]
+
+#
+# remap duplicate tag 20 to tag 420 for cameras 0 and 3
+#
+
+tag_id_remap:
+  - id: 20
+    remaps:
+      - remap_id: 420
+        camera: cam0
+        start_time: 1530000000.000000000
+        end_time:   1533224459.556192840
+      - remap_id: 420
+        camera: cam3
+        start_time: 1530000000.000000000
+        end_time:   1533224459.556192840

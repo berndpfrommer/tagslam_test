@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num_tests=18
+num_tests=20
 
 td=`rospack find tagslam_test`
 for i in $(seq 1 $num_tests);
