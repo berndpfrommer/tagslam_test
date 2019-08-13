@@ -40,9 +40,9 @@ bodies:
              y: -1.54595292
              z: -0.04467586
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -59,9 +59,9 @@ bodies:
              y: 0.0
              z:  2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -78,29 +78,29 @@ bodies:
              y:  1.570796327
              z:  0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
              z: 5.0e-02
-# adjusted y from 0.576 -> 0.5523
+# adjusted y from 0.576 -> 0.523
        - id: 5
          size: 0.15000000
          pose:
            position:
              x: 58.84
-             y: 0.5223
+             y: 0.576
              z: 2.183
            rotation:
              x: 3.14159265
              y: 0.00
              z: 0.00
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -117,9 +117,9 @@ bodies:
              y:  0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -136,9 +136,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -155,9 +155,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -174,9 +174,9 @@ bodies:
              y: -1.57079633
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -193,9 +193,9 @@ bodies:
              y:  2.22144147
              z:  0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -212,9 +212,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -231,9 +231,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -250,9 +250,9 @@ bodies:
              y: -1.57079633
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -270,9 +270,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -283,16 +283,16 @@ bodies:
          pose:
            position:
              x:  51.58
-             y:  0.04
+             y:  0.045
              z:  1.94
            rotation:
              x: -1.20919958
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -310,9 +310,9 @@ bodies:
              y: 0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -329,9 +329,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -349,9 +349,9 @@ bodies:
              y:  2.22144147
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -368,9 +368,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -388,9 +388,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -408,9 +408,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -427,9 +427,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -446,19 +446,19 @@ bodies:
              y:  0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
              z: 5.0e-02
-# adjusted x from 57.33 -> 57.45
+# adjusted x from 57.33 -> 57.46
        - id: 38
          size: 0.150
          pose:
            position:
-             x:  57.33
+             x:  57.46
              y:  0.045
              z:  1.92
            rotation:
@@ -466,9 +466,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -485,14 +485,13 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
              z: 5.0e-02
-#
        - id: 40
          size: 0.150
          pose:
@@ -505,9 +504,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -525,9 +524,9 @@ bodies:
              y:  3.14159265
              z:  0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -544,9 +543,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -563,9 +562,9 @@ bodies:
              y: 0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -583,13 +582,13 @@ bodies:
              y: 2.47231417
              z: -2.29289729
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
-             x: 5.0e-01
-             y: 5.0e-01
-             z: 5.0e-01
+             x: 5.0e-02
+             y: 5.0e-02
+             z: 5.0e-02
        - id: 45
          size: 0.150
          pose:
@@ -602,9 +601,9 @@ bodies:
              y:  3.14159265
              z:  0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -621,9 +620,9 @@ bodies:
              y: 3.14159265
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -640,9 +639,9 @@ bodies:
              y:  1.57079633
              z:  0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -660,9 +659,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -679,9 +678,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -698,9 +697,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -717,9 +716,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -736,9 +735,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -755,9 +754,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -774,9 +773,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -793,9 +792,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -812,9 +811,9 @@ bodies:
              y: 2.22144147
              z: 0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -831,9 +830,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -852,9 +851,9 @@ bodies:
              y:  0
              z:  0
            position_noise:
-             x: 1.0001
-             y: 1.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -871,28 +870,32 @@ bodies:
              y: 0.0
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
              z: 5.0e-02
+# y offset was just estimate, corrected from -0.07 -> -0.02, based on optimization and image
+# ad-hoc corrections:
+# x: 63.80-> 63.83
+# z: 0.88 -> 0.90
        - id: 65
          size: 0.150
          pose:
            position:
-             x:  63.80
-             y:  -0.07
-             z:  0.88
+             x:  63.83
+             y:  -0.02
+             z:   0.90
            rotation:
              x: -1.20919958
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -909,9 +912,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -928,9 +931,9 @@ bodies:
              y: 2.22144147
              z: 0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -947,9 +950,9 @@ bodies:
              y: 2.22144147
              z: 0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -966,9 +969,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -985,9 +988,9 @@ bodies:
              y: -1.5707963268
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1005,9 +1008,9 @@ bodies:
              y:  0
              z:  0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1024,9 +1027,9 @@ bodies:
              y:  -3.1415926
              z:  0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1043,9 +1046,9 @@ bodies:
              y: -1.5707963268
              z: 0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1062,9 +1065,9 @@ bodies:
              y:  0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1081,9 +1084,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1100,9 +1103,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1119,9 +1122,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 1.0001
-             y: 1.0001
-             z: 1.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1138,9 +1141,9 @@ bodies:
              y:  0.0
              z:  0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1157,9 +1160,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1176,9 +1179,9 @@ bodies:
              y: 1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1195,28 +1198,29 @@ bodies:
              y: 3.14159265
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
              z: 5.0e-02
+# Adjusted due to large error: y 0.17 -> y=0.198
        - id: 91
          size: 0.150
          pose:
            position:
              x: 72.94
-             y: 0.17
+             y: 0.198
              z: 2.19
            rotation:
              x: 0.0
              y: -1.57079633
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1233,9 +1237,29 @@ bodies:
              y: -1.20919958
              z: 1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
+           rotation_noise:
+             x: 5.0e-02
+             y: 5.0e-02
+             z: 5.0e-02
+#changed x=-4.76 to x= -3.90
+       - id: 96
+         size: 0.15
+         pose:
+           position:
+             x: 0.060
+             y: 1.170
+             z: 2.030
+           rotation:
+             x:  2.22144147
+             y: 0.02529067
+             z:  2.22144147
+           position_noise:
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1253,9 +1277,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1272,9 +1296,9 @@ bodies:
              y: -1.57079633
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1292,9 +1316,9 @@ bodies:
              y: 2.26773302
              z: 2.42648802
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1311,9 +1335,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1331,9 +1355,9 @@ bodies:
              y: -1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1351,9 +1375,9 @@ bodies:
              y:  3.1415926
              z:  0
            position_noise:
-             x: 0.1
-             y: 0.1
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1370,9 +1394,9 @@ bodies:
              y: 0.0
              z: -2.22144147
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1389,9 +1413,9 @@ bodies:
              y: 0.0
              z: 0.0
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1408,9 +1432,9 @@ bodies:
              y:  1.20919958
              z:  1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1427,9 +1451,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1446,9 +1470,9 @@ bodies:
              y: 1.20919958
              z: 1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1465,9 +1489,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1484,9 +1508,9 @@ bodies:
              y: -1.20919958
              z: -1.20919958
            position_noise:
-             x: 0.0001
-             y: 0.0001
-             z: 0.0001
+             x: 0.01
+             y: 0.01
+             z: 0.01
            rotation_noise:
              x: 5.0e-02
              y: 5.0e-02
@@ -1496,10 +1520,24 @@ bodies:
      type: simple
      odom_frame_id: ovc/imu
      odom_topic: "/vio/odom"
-     odom_acceleration: 0.1
-     odom_angular_acceleration: 1.0
-     odom_translation_noise: 0.01
-     odom_rotation_noise: 0.01
+#
+#    adaptive noise parameters: adjust the
+#    noise assigned to odometry input depending on
+#    how large a jump the odometry input showed.
+#    The parameters limit the max and min of the noise.
+#    Units are in m/sec^2 or rad/sec^2
+#
+     odom_acceleration_noise_min: 5.0
+     odom_acceleration_noise_max: 40.0
+     odom_angular_acceleration_noise_min: 5.0
+     odom_angular_acceleration_noise_max: 40.0
+#
+#    You can enter the odom_translation_noise and odom_rotation_noise
+#    directly, non-adaptiv. This overrides the parameters above.
+#
+
+#     odom_translation_noise: 0.02
+#     odom_rotation_noise: 0.02
      T_body_odom:
        position:
          x:  0.02535438
@@ -1509,8 +1547,30 @@ bodies:
          x: -1.50468965e-02
          y: -1.17231429e-03
          z: -3.13883257e+00
+#
+# squash 2 marginal detections (partial occlusion)
+#
+
 squash:
   - time: "1541781525.782871904"
     tags: [66]
   - time: "1541781525.832736904"
     tags: [66]
+
+#
+# tag 20 is erroneously twice in the data set, because
+# two tags were printed. Tag 520 is at the very end of the
+# long hallway, tag 420 at the beginning
+
+tag_id_remap:
+  - id: 20
+    remaps:
+      - remap_id: 420
+        start_time: 1541781295.884319248
+        end_time:   1541781638.331278824
+      - remap_id: 520
+        start_time: 1541781638.381100824
+        end_time:   1541781691.832541656
+      - remap_id: 420
+        start_time: 1541781691.882402656
+        end_time:   1541781638.331278824
