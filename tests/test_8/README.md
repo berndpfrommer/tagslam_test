@@ -8,6 +8,7 @@
 - detector: MIT
 - frames: 160
 - Remark: does extrinsics calibration. Low fps.
-  Has about 2712 factors.
+  Has about 2712 factors. Really pushes the limits of
+  the initialization: you cannot run in "fast" mode.
 
 
