@@ -11,11 +11,8 @@
     <rosparam param="camera_poses" command="load"
 	      file="$(arg test_dir)/camera_poses.yaml"/>
     <param name="bag_file" value="$(arg test_dir)/tag_detections.bag"/>
-    <param name="max_subgraph_error" value="50.0"/>
-    <param name="max_num_incremental_opt" value="200"/>
-    <param name="optimizer_mode" value="slow"/>
     <param name="sync_queue_size" value="100"/>
-    <param name="minimum_viewing_angle" value="12.0"/>
     <param name="exit_when_done" value="true"/>
+    <param name="playback_rate" value="100.0"/>
   </node>
 </launch>
