@@ -24,8 +24,12 @@ class PoseStats():
     def __init__(self):
         self.missing, self.extra, self.common = (0,0,0)
         self.angle_error, self.position_error = (0.0, 0.0)
-        self.min_pos_err = 1e30
-        self.max_pos_err = -1e30
+        self.angle_error_max = 0
+        self.angle_error_max_time = 0
+        self.angle_error_max_topic = ''
+        self.position_error_max = 0
+        self.position_error_max_time = 0
+        self.position_error_max_topic = ''
     def print_stats(self):
         print 'missing: ', self.missing
         print 'extra: ',   self.extra
@@ -35,6 +39,12 @@ class PoseStats():
         if self.common > 0:
             print 'per-pose angle error: ', self.angle_error / self.common
             print 'per-pose position error: ', self.position_error/self.common
+            print 'max position error: ', self.position_error_max, \
+                ' ', self.position_error_max_time, \
+                ' ', self.position_error_max_topic
+            print 'max angle error: ', self.angle_error_max, \
+                ' ', self.angle_error_max_time, \
+                ' ', self.angle_error_max_topic
     def good(self, thresh):
         if self.missing !=0 or self.extra != 0 :
             return False
@@ -83,6 +93,14 @@ def compare_odom(t1, p1, t2, p2):
             stats.angle_error = stats.angle_error + da
             stats.position_error = stats.position_error + dx
             stats.common = stats.common + 1
+            if da > stats.angle_error_max:
+                stats.angle_error_max = da
+                stats.angle_error_max_time = t
+                stats.angle_error_max_topic = tp
+            if dx > stats.position_error_max:
+                stats.position_error_max = dx
+                stats.position_error_max_time = t
+                stats.position_error_max_topic = tp
         stats.missing = stats.missing + len(ps1.difference(ps2))
         stats.extra = stats.extra + len(ps2.difference(ps1))
     for t in ts1.difference(ts2):
