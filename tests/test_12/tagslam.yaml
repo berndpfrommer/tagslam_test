@@ -72,9 +72,9 @@ bodies:
          y:  2.84301166e-02
          z:  3.14080874
 # this tag is just badly detected in that frame...
-squash:
-  - time: "1541778006.817922736"
-    tags: [11]
+#squash:
+#  - time: "1541778006.817922736"
+#    tags: [11]
 tag_id_remap:
   - id: 20
     remaps:
