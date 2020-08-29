@@ -1,0 +1,109 @@
+#
+# Example TagSLAM configuration file for TOF + realsense 265
+# at 11 Nolen Ln
+# Odom provided by basalt
+#
+
+tagslam_parameters:
+  optimizer_mode: fast # use isam to update
+  minimum_viewing_angle: 12.0
+  max_num_incremental_opt: 50000  # hack to never run full gtsam optimization 
+  pixel_noise: 2.0  #width of the gaussian in pixels
+  max_subgraph_error: 50.0 #robustness threshold
+  subgraph_abs_prior_position_noise: 0.1
+  subgraph_abs_prior_rotation_noise: 0.1
+  use_approximate_sync: true # accept unsynchronized data
+body_defaults: 
+  position_noise: 0.05
+  rotation_noise: 0.01
+default_body: house #environment to anchor a tag can be static or not
+bodies:
+ - house:
+     is_static: true
+     ignore_tags: []
+     default_tag_size: 0.16000
+     max_hamming_distance: 1
+     pose:
+       position:
+         x: 0
+         y: 0
+         z: 0
+       rotation:
+         x: 0
+         y: 0
+         z: 0
+       position_noise:
+         x: 0.0001
+         y: 0.0001
+         z: 0.0001
+       rotation_noise:
+         x: 1.0e-05
+         y: 1.0e-05
+         z: 1.0e-05
+     type: simple
+     tags:
+       - id: 2
+         size: 0.16000000
+         pose:
+           position:
+             x: 0.93840377
+             y: -0.51000614
+             z: 0.13412727
+           rotation:
+             x: 1.06798425
+             y: -1.09447860
+             z: -1.25097143
+           position_noise:
+             x: 0.001
+             y: 0.001
+             z: 0.001
+           rotation_noise:
+             x: 0.001
+             y: 0.001
+             z: 0.001
+       - id: 100
+         size: 0.10000000
+       - id: 101
+         size: 0.10000000
+       - id: 102
+         size: 0.10000000
+       - id: 103
+         size: 0.10000000
+       - id: 104
+         size: 0.10000000
+       - id: 105
+         size: 0.10000000
+       - id: 106
+         size: 0.10000000
+       - id: 107
+         size: 0.10000000
+       - id: 108
+         size: 0.10000000
+
+ - rig: #dynamic body attached to the camera
+     ignore_tags: []
+     is_static: false
+     type: simple
+     odom_topic: "/vio_node/odom"
+     odom_frame_id: basalt_pose_frame #child frame of the odom topic
+     odom_acceleration: 1.0
+     odom_angular_acceleration: 1.0
+     # transform between the rig body and the
+     # body for which the odometry is computed.
+     # For Basalt, the odom is computed in the IMU
+     # frame, and the TagSLAM rig frame equals left camera
+     # optical frame, so here we need the transform between
+     # odom(IMU) -> body (left cam), which we can get from
+     # the Basalt calibration.
+     # TODO: check that it's the right way around, because
+     # this transform is very close to its inverse!
+     
+     T_body_odom:  # got this from the basalt calib
+       position:
+         x:  0.010699568316340447
+         y:  0.0
+         z:  0.0
+       rotation:
+         x:  0.0135696
+         y:  -0.0062165
+         z:  3.1391944

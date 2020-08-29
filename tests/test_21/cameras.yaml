@@ -1,0 +1,40 @@
+cam0:
+  # fisheye 1
+  camera_model: pinhole
+  intrinsics: [286.712, 286.784, 420.914, 396.892]
+  distortion_model: equidistant
+  distortion_coeffs: [-0.006671324837952852, 0.03932977095246315, -0.03556782007217407, 0.005536118987947702]
+  resolution: [848, 800]
+  rostopic: /t265/fisheye1/image_raw
+  tagtopic: /t265/fisheye1/tags
+  rig_body: rig
+cam1:
+  # fisheye 2
+  camera_model: pinhole
+  intrinsics: [286.80, 286.692, 424.236, 401.151]
+  distortion_model: equidistant
+  distortion_coeffs: [-0.007813652977347374, 0.045826349407434464, -0.04364340007305145, 0.008304417133331299]
+  resolution: [848, 800]
+  rostopic: /t265/fisheye2/image_raw
+  tagtopic: /t265/fisheye2/tags
+  rig_body: rig
+cam2:
+  # left_tof
+  camera_model: pinhole
+  intrinsics: [210.689, 210.689, 106.708, 87.122]
+  distortion_model: plumb_bob
+  distortion_coeffs: [0.3922043442726135, -4.427685737609863, 2.0898354746078313e-15, 2.48361548019308e-16, 7.789391040802002]
+  resolution: [224, 171]
+  rostopic: /left_tof/stream/1/mono8
+  tagtopic: /left_tof/tags
+  rig_body: rig
+cam3:
+  # right_tof
+  camera_model: pinhole
+  intrinsics: [212.404, 212.404, 109.678, 87.406]
+  distortion_model: plumb_bob
+  distortion_coeffs: [0.20148544013500214, -3.3908843994140625, 3.464264169107602e-15, 1.0268240547593797e-15, 6.177295684814453]
+  resolution: [224, 171]
+  rostopic: /right_tof/stream/1/mono8
+  tagtopic: /right_tof/tags
+  rig_body: rig
