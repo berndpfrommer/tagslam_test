@@ -1,6 +1,6 @@
 #!/bin/bash
 
-num_tests=21
+num_tests=22
 start_test=1
 
 td=`rospack find tagslam_test`
