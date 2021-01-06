@@ -14,6 +14,7 @@ import rosbag, rospy, numpy as np
 import tf
 import argparse
 import sys
+import math
 import tf_conversions.posemath as pm
 from collections import defaultdict
 
@@ -88,7 +89,7 @@ def compare_odom(t1, p1, t2, p2):
         for tp in tp_common:
             p1inv = p1[t][tp].Inverse()
             delta = p1inv * p2[t][tp]
-            da = delta.M.GetRotAngle()[0]
+            da = math.acos(max((min((delta.M.GetQuaternion()[3], 1.0)), -1.0)))
             dx = delta.p.Norm()
             stats.angle_error = stats.angle_error + da
             stats.position_error = stats.position_error + dx
