@@ -1,0 +1,75 @@
+cam0:
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [438.5898861825094, 439.2350629155591, 380.55183679745323, 237.06996190675738]
+  resolution: [752, 480]
+  rostopic: /cam0/image_raw
+  tagtopic: /cam0/tags
+  rig_body: rig
+cam1:
+  T_cn_cnm1:
+  - [0.999844782064178, 0.012343089827202853, 0.012572188057343227, -0.14987747140869448]
+  - [-0.01209629386627142, 0.9997362755202971, -0.019520734706994624, 0.0005298064251127597]
+  - [-0.012809818645570537, 0.019365627857564068, 0.9997304041610144, 0.0010221494745613026]
+  - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [436.5895992317873, 437.2546694330711, 368.99035424118205, 227.59364870800326]
+  resolution: [752, 480]
+  rostopic: /cam1/image_raw
+  tagtopic: /cam1/tags
+  rig_body: rig
+cam2:
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [444.60341185410863, 444.29495835414923, 378.4422730959391, 240.59495792313228]
+  resolution: [752, 480]
+  rostopic: /cam2/image_raw
+  tagtopic: /cam2/tags
+  rig_body: rig
+cam3:
+  T_cn_cnm1:
+  - [0.9998851146385523, -0.0056065876265575755, 0.014082744740780898, -0.15003277009015326]
+  - [0.00555503385547971, 0.9999777357992108, 0.0036972293339075173, 0.0001533426944568075]
+  - [-0.014103160039960363, -0.003618574452566021, 0.9998939977796735, 0.0012509475646899292]
+  - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [437.9534959050904, 437.8474539689678, 371.00605147617784, 231.6969745226225]
+  resolution: [752, 480]
+  rostopic: /cam3/image_raw
+  tagtopic: /cam3/tags
+  rig_body: rig
+cam4:
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [438.26886368383487, 437.83342054476276, 378.7355603006552, 236.84620010980387]
+  resolution: [752, 480]
+  rostopic: /cam4/image_raw
+  tagtopic: /cam4/tags
+  rig_body: rig
+cam5:
+  T_cn_cnm1:
+  - [0.9999133198901975, 0.000552665089217456, 0.013154743154527837, -0.08988282751881016]
+  - [-0.0008100047386744589, 0.9998082546979203, 0.01956521735684416, 0.0009775673072991394]
+  - [-0.01314140778173182, -0.019574176845946582, 0.9997220388699635, 0.00038527757606915484]
+  - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [435.3952941834081, 435.24448068180897, 375.65396310525995, 249.53831102073116]
+  resolution: [752, 480]
+  rostopic: /cam5/image_raw
+  tagtopic: /cam5/tags
+  rig_body: rig
