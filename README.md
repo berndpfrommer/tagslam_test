@@ -21,3 +21,7 @@ You can also run an individual test like this:
 
     rosrun tagslam_test run_single_test.bash 18
 
+## License
+
+This software is and any future contributions to it are licensed under
+the [Apache License 2.0](LICENSE).
