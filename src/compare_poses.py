@@ -32,20 +32,20 @@ class PoseStats():
         self.position_error_max_time = 0
         self.position_error_max_topic = ''
     def print_stats(self):
-        print 'missing: ', self.missing
-        print 'extra: ',   self.extra
-        print 'common: ',   self.common
-        print 'total angle error: ', self.angle_error
-        print 'total position error: ', self.position_error
+        print('missing: ', self.missing)
+        print('extra: ',   self.extra)
+        print('common: ',   self.common)
+        print('total angle error: ', self.angle_error)
+        print('total position error: ', self.position_error)
         if self.common > 0:
-            print 'per-pose angle error: ', self.angle_error / self.common
-            print 'per-pose position error: ', self.position_error/self.common
-            print 'max position error: ', self.position_error_max, \
+            print('per-pose angle error: ', self.angle_error / self.common)
+            print('per-pose position error: ', self.position_error/self.common)
+            print('max position error: ', self.position_error_max, \
                 ' ', self.position_error_max_time, \
-                ' ', self.position_error_max_topic
-            print 'max angle error: ', self.angle_error_max, \
+                ' ', self.position_error_max_topic)
+            print('max angle error: ', self.angle_error_max, \
                 ' ', self.angle_error_max_time, \
-                ' ', self.angle_error_max_topic
+                ' ', self.angle_error_max_topic)
     def good(self, thresh):
         if self.missing !=0 or self.extra != 0 :
             return False
@@ -123,7 +123,7 @@ def read_odom(fname, verbose=False):
             t.append(msg.header.stamp)
             p[msg.header.stamp][topic] = T
     if verbose:
-        print 'read %d poses from %s' % (len(t), fname)
+        print('read %d poses from %s' % (len(t), fname))
     return np.array(t), p
 
 def read_tf(fname, verbose=False):
@@ -144,7 +144,7 @@ def read_tf(fname, verbose=False):
                 key = i.header.frame_id + '->' + i.child_frame_id
                 p[time][key]=(i.header.frame_id, i.child_frame_id, m)
     if verbose:
-        print 'read %d transforms from %s' % (len(t), fname)
+        print('read %d transforms from %s' % (len(t), fname))
     return np.array(t), p
 
 if __name__ == '__main__':
@@ -168,11 +168,11 @@ if __name__ == '__main__':
     tf_stats = compare_transforms(t1, p1, t2, p2)
     if (args.verbose or not pose_stats.good(args.threshold)
         or not tf_stats.good(args.threshold)):
-        print '----- odom ------'
+        print('----- odom ------')
         pose_stats.print_stats()
-        print '----- transforms ----'
+        print('----- transforms ----')
         tf_stats.print_stats()
     if pose_stats.good(args.threshold) and tf_stats.good(args.threshold):
         sys.exit(0)
-    print 'TEST FAILED!'
+    print('TEST FAILED!')
     sys.exit(-1)
