@@ -1,0 +1,83 @@
+tagslam_parameters:
+  optimizer_mode: fast
+  minimum_viewing_angle: 12.0
+  max_num_incremental_opt: 200
+  pixel_noise: 1.0
+  max_subgraph_error: 50.0
+  subgraph_abs_prior_position_noise: 0.1
+  subgraph_abs_prior_rotation_noise: 0.1
+body_defaults:
+  position_noise: 0.05
+  rotation_noise: 0.01
+
+# any tags not specifically assigned to a body will
+# be associated with the default_body
+default_body: lab
+
+bodies:
+ - lab:  # this is the "world" body 
+     is_static: true
+     default_tag_size: 1.0 # should never be used
+     pose:
+       position:
+         x: 0
+         y: 0
+         z: 0
+       rotation:
+         x: 0
+         y: 0
+         z: 0
+       position_noise:
+         x: 0.0001
+         y: 0.0001
+         z: 0.0001
+       rotation_noise:
+         x: 1.0e-05
+         y: 1.0e-05
+         z: 1.0e-05
+     type: simple
+
+ - tag_board: # this body consists of auto-generated tags
+     is_static: false
+     default_tag_size: 0.049
+     type: board
+     board:
+       tag_start_id: 0
+       tag_size: 0.049
+       tag_bits: 6
+       tag_spacing: 0.50
+       tag_rows: 3
+       tag_columns: 3
+       tag_rotation_noise: 0.001
+       tag_position_noise: 0.001
+       pose:
+         position:
+           x: 0.0735
+           y: 0.0735
+           z: 0
+         rotation:
+           x: 0
+           y: 0
+           z: 0
+       
+ - rig: # camera rig
+     is_static: true
+     type: simple
+     pose:
+       position:
+         x: 0.36109763
+         y: -0.13639660
+         z: 0.29137560
+       rotation:
+         x: -1.77336911
+         y: -1.43991510
+         z: 0.43774529
+       position_noise:
+         x: 0.00266514
+         y: 0.00286120
+         z: 0.00154656
+       rotation_noise:
+         x: 0.00643550
+         y: 0.00591262
+         z: 0.00390380
+
