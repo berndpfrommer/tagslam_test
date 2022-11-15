@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # script to compare poses from odom and transforms from two different bags
 #
