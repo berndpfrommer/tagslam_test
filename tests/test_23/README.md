@@ -1,4 +1,4 @@
-# Example 24
+# Example 23
 
 - Location: GRASP lab
 - Cameras:
