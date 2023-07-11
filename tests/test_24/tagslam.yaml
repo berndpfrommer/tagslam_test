@@ -1,0 +1,262 @@
+tagslam_parameters:
+# optimizer mode: full (full optimization, no iSAM2 used)
+#                 slow (use iSAM2, but test for error and use full if error is large)
+#                 fast (iSAM2 only, no test for error)
+# default: slow
+  optimizer_mode: slow
+# minimum angle [in degrees] between optical axis and tag surface
+  minimum_viewing_angle: 15.0
+# minimum tag area in pixels^2
+  minimum_tag_area: 2000
+# number of incremental updates before running
+# a full graph optimization (default: 50)
+  max_num_incremental_opt: 5000
+# estimated error of tag corner detector
+  pixel_noise: 2.0
+# maximum allowed subgraph error. If error is above that,
+# the frame is thrown away, the measurement ignored.
+  max_subgraph_error: 50.0
+# Noise with which the subgraph absolute priors will be
+# pinned down. This parameter usually does not need to be touched.
+  subgraph_abs_prior_position_noise: 0.1
+  subgraph_abs_prior_rotation_noise: 0.1
+# if the time stamps (header.stamp) of your data messages are not
+# identical (hardware synced), set this option to true, and
+# tagslam tries to line them up as well as possible. Expect larger errors
+# because the data is not truly synchronous.
+  use_approximate_sync: false
+body_defaults:
+  position_noise: 0.01
+  rotation_noise: 0.01
+# if tags are discovered that are not explicitly associated with any body, they will be attached to the default body.
+# default_body: lab
+
+bodies:
+ - lab:
+     is_static: true
+     default_tag_size: 0.05 ## the rectangle board tag
+     # ignore_tags: [149, 1, 3]
+     pose:
+       position:
+         x: 0
+         y: 0
+         z: 0
+       rotation:
+         x: 0
+         y: 0
+         z: 0
+       position_noise:
+         x: 0.0001
+         y: 0.0001
+         z: 0.0001
+       rotation_noise:
+         x: 1.0e-05
+         y: 1.0e-05
+         z: 1.0e-05
+     type: simple
+
+#     tags: 
+#     - id: 79
+#       size: 0.05
+#       pose:
+#         position:
+#           x: 0
+#           y: 0
+#           z: 0
+#         rotation:
+#           x: 0
+#           y: 0
+#           z: 0
+#         position_noise:
+#           x: 0.0001
+#           y: 0.0001
+#           z: 0.0001
+#         rotation_noise:
+#           x: 1.0e-05
+#           y: 1.0e-05
+#           z: 1.0e-05
+
+ - rect_board_72:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 72
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+     pose:
+       position:
+         x: 0
+         y: 0
+         z: 0
+       rotation:
+         x: 0
+         y: 0
+         z: 0
+       position_noise:
+         x: 0.0001
+         y: 0.0001
+         z: 0.0001
+       rotation_noise:
+         x: 1.0e-05
+         y: 1.0e-05
+         z: 1.0e-05
+
+ - rect_board_0:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 0
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_36:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 36
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_108:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 108
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_144:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 144
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_180:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 180
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_216:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 216
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_252:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 252
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_288:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 288
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rect_board_324:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 324
+       tag_size: 0.05
+       tag_spacing: 1.0
+       tag_rows: 7
+       tag_columns: 5
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+
+ - circ_board_2105:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 2105
+       tag_size: 0.06
+       tag_spacing: 1.0
+       tag_rows: 3
+       tag_columns: 3
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - circ_board_2080:
+     is_static: true
+     type: staggered_board
+     staggered_board:
+       tag_start_id: 2080
+       tag_size: 0.06
+       tag_spacing: 1.0
+       tag_rows: 3
+       tag_columns: 3
+       tag_rotation_noise: 0.001 # rot noise between body and tag
+       tag_position_noise: 0.001 # pos noise between body and tag
+
+ - rig:
+     is_static: false
+     type: simple
+     odom_frame_id: body_rig 
+
+
+plane_measurements:
+  - plane_1:
+      tags: [0, 36, 72, 108, 180, 216, 252, 288, 324]
+      distance: 0.0
+      noise: 0.01
+      direction: [0.0, 0.0, 1.0]
+
+distance_measurements:
+ - rectangle_measurement_01:
+     tag1: 0
+     tag2: 17
+     corner1: 0
+     corner2: 0
+     distance: 0.72111 # 0.4 * 0.6
+     noise: 0.01
+

@@ -1,0 +1,9 @@
+cam0:
+  camera_model: pinhole
+  intrinsics: [2635.523631014868897, 2639.223648659279206, 1437.577439139180797, 928.1456461363928838]
+  distortion_coeffs: [-0.3315078575346754319, -0.2931924828871734778, -0.0002564559973218503183, -0.0004682219514811433335, 0.6552477230968362099]
+  distortion_model: radtan
+  resolution: [2880, 1860]
+  rostopic: /usb_cam/image_raw/compressed
+  tagtopic: /detector/tags
+  rig_body: rig
